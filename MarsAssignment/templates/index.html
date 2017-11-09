@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/styles/mars.css">
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Mission to Mars</h1>
+
+    </div>
+  </div>
+  <div class="container">
+    <!-- Content here -->
+    <h2>Latest Mars News</h2>
+    <h4>{{marsData.news_title}}</h4>
+    <p>{{marsData.news_p}}</p>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Featured Mars Image</h2>
+      <img src="{{marsData.feature_Image_Url}}" class="featured-image" />
+    </div>
+    <div class="col-md-4">
+      <div class="weather">
+      <h3>Current Weather on mars</h3>
+      <p>{{marsData.mars_weather}}</p>
+      </div>
+      <h3>Mars Facts</h3>
+      {{marsData.marsFactsHtml|safe}}
+    </div>
+  </div>
+  <div class="row featured-image-container"></div>
+  <div class="row">
+      <div>
+        <h3 class="hemisphere-title">Mars Hemisphere</h3>
+        <hr/>
+      </div>
+      {% for x in marsData.hemisphere_image_urls: %}
+      <div class="col-md-6">
+        <div class="hemisphere-image">
+          <img src="{{x.img_url}}" class="thumbnail" width="100%"/>
+          <span>{{x.title}}</span>
+        </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+</body>
+
+</html>

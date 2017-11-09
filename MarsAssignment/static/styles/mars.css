@@ -1,0 +1,38 @@
+.display-3{
+    text-align: center;
+    padding-left:50px;   
+}
+.weather{
+    border: 2px solid lightgray;
+    padding: 10px;
+}
+.hemisphere-image{
+    border: 1px solid lightgray;
+    margin: 5px;
+}
+.thumbnail{
+    border-width: 0px;
+    width: 100%;
+}
+.hemisphere-image>span{
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.hemisphere-title{
+    text-align: center;
+}
+.featured-image{
+    width: 100%;
+}
+.featured-image-container{
+    padding-bottom: 20px;
+    background-image: -webkit-linear-gradient(bottom, #eeeeee, #FFFFFF);
+    background-image: -moz-linear-gradient(bottom, #eeeeee, #FFFFFF);
+    background-image: -o-linear-gradient(bottom, #eeeeee, #FFFFFF);
+    background-image: linear-gradient(to top, #eeeeee, #FFFFFF);
+
+
+
+}
