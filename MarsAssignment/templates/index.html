@@ -9,7 +9,11 @@
 <body>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-3">Mission to Mars</h1>
+      <h1 class="display-3">Mission to Mars
+        <br/>
+        <a type="button" class="btn btn-primary" href="/scrape" target="_blank" >Scrape More Mars</a>
+      </h1>
+       
 
     </div>
   </div>
@@ -38,7 +42,9 @@
   <div class="row featured-image-container"></div>
   <div class="row">
       <div>
-        <h3 class="hemisphere-title">Mars Hemisphere</h3>
+        <h3 class="hemisphere-title">Mars Hemisphere!</h3>
+       
+        
         <hr/>
       </div>
       {% for x in marsData.hemisphere_image_urls: %}
